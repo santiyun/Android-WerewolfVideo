@@ -7,6 +7,7 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -32,6 +33,7 @@ import com.tttrtcgame.callback.PhoneListener;
 import com.tttrtcgame.dialog.ExitRoomDialog;
 import com.tttrtcgame.utils.MyLog;
 import com.wushuangtech.library.Constants;
+import com.wushuangtech.videocore.RemoteSurfaceView;
 import com.wushuangtech.wstechapi.TTTRtcEngineForGamming;
 import com.wushuangtech.wstechapi.model.VideoCanvas;
 
