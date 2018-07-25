@@ -2,6 +2,7 @@ package com.tttrtcgame;
 
 import android.app.Application;
 
+import com.tencent.bugly.crashreport.CrashReport;
 import com.tttrtcgame.callback.MyTTTRtcEngineEventHandler;
 import com.wushuangtech.utils.CrashHandler;
 import com.wushuangtech.wstechapi.TTTRtcEngineForGamming;
@@ -25,6 +26,8 @@ public class MainApplication extends Application {
 //        //2.设置SDK的回调接收类
         mMyTTTRtcEngineEventHandler = new MyTTTRtcEngineEventHandler(getApplicationContext());
         mTTTEngine.setTTTRtcEngineForGammingEventHandler(mMyTTTRtcEngineEventHandler);
+
+        CrashReport.initCrashReport(getApplicationContext(), "d987658f78", true);
     }
 
 }
